@@ -3,7 +3,7 @@ namespace: default
 ingressClass: nginx
 replicas:
   backend: 3
-  frontend: 3
+  frontend: 5
 images:
   backend_image: 
     name: programmingninjas/quectolink-backend
