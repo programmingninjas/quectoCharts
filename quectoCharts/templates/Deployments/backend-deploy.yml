@@ -7,7 +7,7 @@ metadata:
     name: backend-deploy
     app: {{ .Values.appName }}
 spec:
-  replicas: 3
+  replicas: {{ .Values.replicas.backend }}
   selector:
     matchLabels:
       name: backend-pod
