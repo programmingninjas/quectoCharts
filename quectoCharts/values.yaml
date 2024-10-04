@@ -7,10 +7,10 @@ replicas:
 images:
   backend_image: 
     name: programmingninjas/argolink-backend
-    tag: 0.0.1
+    tag: 0.0.2
   frontend_image: 
     name: programmingninjas/argolink-frontend
-    tag: 0.0.1
+    tag: 0.0.2
 configmap:
   backend_data:
     PORT: "5000"
