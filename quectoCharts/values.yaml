@@ -1,6 +1,6 @@
 appName: quectolink
 namespace: default
-ingressClass: nginx
+ingressClass: traefik
 replicas:
   backend: 1
   frontend: 1
