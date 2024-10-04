@@ -2,15 +2,15 @@ appName: quectolink
 namespace: default
 ingressClass: nginx
 replicas:
-  backend: 3
-  frontend: 3
+  backend: 1
+  frontend: 1
 images:
   backend_image: 
-    name: programmingninjas/quectolink-backend
+    name: programmingninjas/argolink-backend
     tag: 0.0.2
   frontend_image: 
-    name: programmingninjas/quectolink
-    tag: 0.0.2
+    name: programmingninjas/argolink-frontend
+    tag: 0.0.1
 configmap:
   backend_data:
     PORT: "5000"
