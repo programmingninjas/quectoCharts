@@ -11,15 +11,6 @@ images:
   frontend_image: 
     name: programmingninjas/quectolink
     tag: 0.0.2
-  db_image:
-    name: mongo
-    tag: 0.0.2
-  cache_image:
-    name: redis
-    tag: 0.0.2
-  ds_image:
-    name: zookeeper
-    tag: 0.0.2
 configmap:
   backend_data:
     PORT: "5000"

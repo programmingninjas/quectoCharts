@@ -27,7 +27,7 @@ spec:
           claimName: zookeeper-claim
       containers:
       - name: zookeeper
-        image: "{{ .Values.images.ds_image.name }}:{{ .Values.images.ds_image.tag }}"
+        image: zookeeper
         ports:
         - containerPort: 2181
         volumeMounts:

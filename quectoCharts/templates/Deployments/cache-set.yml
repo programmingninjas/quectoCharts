@@ -23,6 +23,6 @@ spec:
     spec:
       containers:
       - name: cache
-        image: "{{ .Values.images.cache_image.name }}:{{ .Values.images.cache_image.tag }}"
+        image: redis:alpine
         ports:
         - containerPort: 6379

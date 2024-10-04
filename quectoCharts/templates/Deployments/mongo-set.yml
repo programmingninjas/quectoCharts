@@ -27,7 +27,7 @@ spec:
           claimName: mongo-claim
       containers:
       - name: mongo
-        image: "{{ .Values.images.db_image.name }}:{{ .Values.images.db_image.tag }}"
+        image: mongo
         ports:
         - containerPort: 27017
         volumeMounts:
