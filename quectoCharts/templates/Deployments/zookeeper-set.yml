@@ -3,6 +3,8 @@ kind: StatefulSet
 metadata:
   name: zookeeper-set
   namespace: {{ .Values.namespace }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     name: zookeeper-set
     app: {{ .Values.appName }}

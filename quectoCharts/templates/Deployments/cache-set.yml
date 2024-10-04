@@ -3,6 +3,8 @@ kind: StatefulSet
 metadata:
   name: cache-set
   namespace: {{ .Values.namespace }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     name: cache-set
     app: {{ .Values.appName }}

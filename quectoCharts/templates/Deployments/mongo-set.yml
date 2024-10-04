@@ -3,6 +3,8 @@ kind: StatefulSet
 metadata:
   name: mongo-set
   namespace: {{ .Values.namespace }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     name: mongo-set
     app: {{ .Values.appName }}
