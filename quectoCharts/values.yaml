@@ -7,19 +7,19 @@ replicas:
 images:
   backend_image: 
     name: programmingninjas/quectolink-backend
-    tag: latest
+    tag: 0.0.2
   frontend_image: 
     name: programmingninjas/quectolink
-    tag: latest
+    tag: 0.0.2
   db_image:
     name: mongo
-    tag: latest
+    tag: 0.0.2
   cache_image:
     name: redis
-    tag: alpine
+    tag: 0.0.2
   ds_image:
     name: zookeeper
-    tag: latest
+    tag: 0.0.2
 configmap:
   backend_data:
     PORT: "5000"
