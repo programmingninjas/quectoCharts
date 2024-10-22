@@ -22,6 +22,12 @@ spec:
       containers:
       - name: frontend
         image: "{{ .Values.images.frontend_image.name }}:{{ .Values.images.frontend_image.tag }}"
+        requests:
+          cpu: "100m"       
+          memory: "256Mi"  
+        limits:
+          cpu: "500m"        
+          memory: "512Mi"   
         envFrom:
          - configMapRef:
              name: frontend-config
