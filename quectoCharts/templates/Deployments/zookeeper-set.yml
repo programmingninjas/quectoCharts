@@ -28,6 +28,12 @@ spec:
       containers:
       - name: zookeeper
         image: zookeeper
+        requests:
+          cpu: "300m"      
+          memory: "512Mi"   
+        limits:
+          cpu: "500m"         
+          memory: "1Gi"     
         ports:
         - containerPort: 2181
         volumeMounts:
